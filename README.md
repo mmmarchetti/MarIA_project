@@ -6,8 +6,8 @@ images. To use it, you need to:
 1) Create a bot for Telegram using BotFather (https://core.telegram.org/bots/tutorial) and an openai 
 account (https://openai.com/api/). Copy the tokens to a file inside the project called 
 .env containing the structure: 
-OPENAI_API_KEY = "YOUR_OPENAI_KEY"
-TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_TOKEN"
+- OPENAI_API_KEY = "YOUR_OPENAI_KEY"
+- TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_TOKEN"
 2) Create a virtual environment in python, install the libraries with pip install requirements.txt and then run 
 $python main.py;
 3) You can also run through $docker-compose up --build. You need to have docker compose installed and configured in your environment.
