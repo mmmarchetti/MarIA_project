@@ -69,7 +69,7 @@ async def response_generator(update: Update, context: ContextTypes.DEFAULT_TYPE)
     create_images_word_list = ["imagem", "desenho", "desenhe", "figura",
                                "image", "figure", "drawing", "drawn"]
 
-    if any(word in text for word in create_images_word_list):
+    if any(word.lower() in text for word in create_images_word_list):
         await update.message.reply_photo(image_generation(text))
 
     else:
