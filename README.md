@@ -3,7 +3,7 @@
 Project that uses ChatGPT and Dall-E technologies to answer questions, follow a conversation and generate text-based 
 images. To use it, you need to:
 
-1) Create a bot for teleram using BotFather (https://core.telegram.org/bots/tutorial) and an openai 
+1) Create a bot for Telegram using BotFather (https://core.telegram.org/bots/tutorial) and an openai 
 account (https://openai.com/api/). Copy the tokens to a file inside the project called 
 .env containing the structure: 
 OPENAI_API_KEY = "YOUR_OPENAI_KEY"
