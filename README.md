@@ -1,4 +1,4 @@
-# MarIA_project
+
 ### Required python 3.7
 Project that uses ChatGPT and Dall-E technologies to answer questions, follow a conversation and generate text-based 
 images. To use it, you need to:
