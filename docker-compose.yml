@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  maria_project:
+    container_name: MarIA_Project
+    build:
+     context: ./
+     dockerfile: Dockerfile
+    environment:
+      NB_UID: 10011
+      GRANT_SUDO: "yes"
+      path_model: ""
+    user: root
+    working_dir: /MarIA_Project
+    restart: always
+    volumes:
+    - ./:/MarIA_Project/
