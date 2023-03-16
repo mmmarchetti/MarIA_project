@@ -1,38 +1,38 @@
-# Telegram Bot for OpenAI GPT-3 Text and Image Generation
-This repository contains the code for a Telegram bot that uses OpenAI's GPT-3 to generate text and images based on user input.
+# Telegram AI Bot
 
-### Getting Started
-To use the bot, you will need to have a Telegram account and create a bot through the BotFather. Once you have created a bot, you will receive a token that you will need to provide in a .env file in the root directory of the project.
+This is a simple AI bot that uses OpenAI to generate responses to user inputs on Telegram. The bot is able to generate either text or image responses based on the user input.
 
-* TELEGRAM_BOT_TOKEN = "your-telegram-bot-token"
-* OPENAI_API_KEY = "your-openai-api-key"
+## Installation
 
-You will also need to have an OpenAI API key to use the GPT-3 API. You can obtain an API key by signing up for OpenAI here.
+To run this bot, you will need to have Python 3.6 or higher installed on your computer.
 
-### Prerequisites
-To run the bot, you will need to have Python 3 installed. You can download Python 3 from the official website: https://www.python.org/downloads/
+1. Clone the repository:
+    ```
+    git clone https://github.com/your_username/telegram-ai-bot.git
+    ```
 
-### Installing
-To install the required dependencies, run:
+2. Install the required packages:
+    ```
+    pip install -r requirements.txt
+    ```
 
-$pip install -r requirements.txt
+3. Create a `.env` file and add your Telegram bot token and OpenAI API key:
+    ```
+    TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+    OPENAI_API_KEY=your_openai_api_key
+    ```
 
-### Running the Bot
-To run the bot, simply run the following command in the root directory of the project:
+## Usage
 
-$python main.py
+To start the bot, run the following command in your terminal:
+    ```
+    python main.py
+    ```
 
-The bot will listen for messages sent to it on Telegram and respond with either generated text or an image, depending on the input.
+Once the bot is running, you can interact with it on Telegram by sending it messages.
 
-### Built With
+The bot will respond with either text or image based on the user input. If the user input contains any of the words "imagem", "desenho", "desenhe", "figura", "image", "figure", "drawing", or "drawn", the bot will generate an image response using OpenAI's image API. Otherwise, the bot will generate a text response using OpenAI's text API.
 
-Python 3
-Telegram API
-OpenAI API
+## License
 
-### Authors
-* OpenAI - Initial work - OpenAI
-* Marcos Martins Marchetti - Additional work
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
